@@ -1,0 +1,18 @@
+
+package cop3530;
+
+import java.util.Iterator;
+
+public interface Map<KeyType,ValueType> extends
+Iterable<HashMap.Map.Entry<KeyType,ValueType>>
+{
+    
+    ValueType get( KeyType k );
+    ValueType put( KeyType k, ValueType v );
+    int size( );
+    void clear( );
+    boolean isEmpty( );
+    interface Entry<KeyType,ValueType> extends java.util.Map.Entry<KeyType,ValueType>
+    {}
+    Iterator<HashMap.Map.Entry<KeyType,ValueType>> iterator( );
+}
