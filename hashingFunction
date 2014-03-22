@@ -1,0 +1,7 @@
+package cop3530;
+
+public interface HashingFunction<T>
+{
+    int hashCode( T obj );
+    boolean equals( T lhs, T rhs );
+}
